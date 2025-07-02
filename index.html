@@ -3,45 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <title>Muhammad Firdaus Rosli - CV</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
+    * {
+      box-sizing: border-box;
       margin: 0;
-      padding: 20px;
-      background-color: #f4f4f4;
+      padding: 0;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      background-color: #f7f9fc;
+      color: #333;
+      padding: 40px 20px;
     }
     .container {
-      max-width: 900px;
+      max-width: 960px;
+      background-color: #fff;
       margin: auto;
-      background: #fff;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
     }
-    h1, h2, h3 {
-      color: #333;
+    h1 {
+      font-size: 2.2rem;
+      color: #2c3e50;
+      margin-bottom: 10px;
     }
-    ul {
-      padding-left: 20px;
+    h2 {
+      color: #2c3e50;
+      margin-top: 30px;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #e1e4e8;
+      padding-bottom: 5px;
     }
     .section {
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
-    .contact p, .contact a {
-      margin: 5px 0;
+    .contact p a {
+      color: #2980b9;
+      text-decoration: none;
     }
-    .project-title {
-      font-weight: bold;
+    ul {
+      list-style: none;
+      padding-left: 0;
     }
-    .job-title {
-      font-weight: bold;
-      color: #444;
+    li {
+      margin-bottom: 6px;
     }
     .skill-icon {
       height: 18px;
       vertical-align: middle;
       margin-right: 8px;
+    }
+    .project-title,
+    .job-title {
+      font-weight: 600;
+    }
+    @media (max-width: 768px) {
+      .container {
+        padding: 20px;
+      }
     }
   </style>
 </head>
@@ -49,10 +72,10 @@
   <div class="container">
     <h1>Muhammad Firdaus Rosli</h1>
     <div class="contact">
-      <p>Lot 501, Taman Rahmah, Padang Kala, 16400 Melor, Kelantan</p>
+      <p>Kota Bharu, Kelantan</p>
       <p>Phone: 019-9422124</p>
-      <p>Email: mfirdausrosli13@gmail.com</p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/firdausrosli77">firdausrosli77</a></p>
+      <p>Email: <a href="mailto:mfirdausrosli13@gmail.com">mfirdausrosli13@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/firdausrosli77" target="_blank">firdausrosli77</a></p>
     </div>
 
     <div class="section">
@@ -76,27 +99,22 @@
 
     <div class="section">
       <h2>Project Experience</h2>
-      <p class="project-title">Final Year Project: Terengganu Tourist Attraction Recommender System</p>
-      <p>Technologies: Python, HeidiSQL, HTML, CSS, Bootstrap</p>
-
-      <p class="project-title">Portal ePendidikan Kelantan</p>
-      <p>Technologies: PHP, MySQL, HTML, CSS, Bootstrap</p>
-
-      <p class="project-title">College Registration System</p>
-      <p>Technologies: Java, MySQL, HTML, CSS, Bootstrap</p>
-
-      <p class="project-title">Portal eTahfiz Melaka</p>
-      <p>Technologies: PHP, MySQL, HTML, CSS, Bootstrap</p>
+      <ul>
+        <li><span class="project-title">Final Year Project: Terengganu Tourist Attraction Recommender System</span><br>Technologies: Python, HeidiSQL, HTML, CSS, Bootstrap</li>
+        <li><span class="project-title">Portal ePendidikan Kelantan</span><br>Technologies: PHP, MySQL, HTML, CSS, Bootstrap</li>
+        <li><span class="project-title">College Registration System</span><br>Technologies: Java, MySQL, HTML, CSS, Bootstrap</li>
+        <li><span class="project-title">Portal eTahfiz Melaka</span><br>Technologies: PHP, MySQL, HTML, CSS, Bootstrap</li>
+      </ul>
     </div>
 
     <div class="section">
       <h2>Technical Skills</h2>
       <ul>
-        <li><img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"/> <strong>Web/Software Dev Tools:</strong> VS Code, MATLAB, Sourcetree, GitLab, Eclipse, Jira, Figma</li>
-        <li><img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"/> <strong>Languages:</strong> PHP, C++, HTML, CSS, Python, Java</li>
-        <li><img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"/> <strong>Database:</strong> MySQL, HeidiSQL, DBeaver</li>
-        <li><img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"/> <strong>Frameworks/Tools:</strong> Robot Framework, Bootstrap, Selenium Webdriver</li>
-        <li><img class="skill-icon" src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png"/> <strong>Query Languages:</strong> XPath</li>
+        <li><img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"/> Web/Software Dev Tools: VS Code, MATLAB, Sourcetree, GitLab, Eclipse, Jira, Figma</li>
+        <li><img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"/> Languages: PHP, C++, HTML, CSS, Python, Java</li>
+        <li><img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"/> Database: MySQL, HeidiSQL, DBeaver</li>
+        <li><img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"/> Frameworks/Tools: Robot Framework, Bootstrap, Selenium Webdriver</li>
+        <li><img class="skill-icon" src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png"/> Query Languages: XPath</li>
       </ul>
     </div>
 
