@@ -1,182 +1,326 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Muhammad Firdaus Rosli - CV</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
   <style>
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
-      background-color: #f7fdfc;
-      color: #2f2f2f;
+      background-color: #f3f6fc;
+      color: #333;
       line-height: 1.6;
+      padding-bottom: 40px;
     }
+
+    a {
+      color: #4a90e2;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
     .header {
-      background-color: #d0f0ea;
+      background-color: #f9fbfd;
       padding: 40px 20px;
       text-align: center;
       border-bottom: 3px solid #ccc;
     }
+
     .header h1 {
       margin: 0;
       font-size: 2.2rem;
-      color: #0b3d3b;
+      color: #1e2a38;
     }
+
     .header h2 {
       font-weight: normal;
-      color: #333;
-      margin: 8px 0 0 0;
+      color: #555;
+      margin-top: 10px;
       font-size: 1rem;
     }
+
     .contact {
       margin-top: 20px;
       font-size: 0.95rem;
     }
-    .contact span {
-      display: inline-block;
-      margin: 0 8px;
+
+    .contact div {
+      margin-bottom: 5px;
     }
+
     .container {
       max-width: 900px;
       margin: auto;
       padding: 30px 20px;
     }
+
     h3 {
       margin: 25px 0 10px;
-      color: #1b1b1b;
+      color: #1e2a38;
+      font-size: 1.6rem;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
     }
-    h4 {
-      margin: 10px 0 5px;
-      font-weight: bold;
-    }
+
     .section {
       margin-bottom: 30px;
     }
-    .entry {
-      margin-bottom: 15px;
+
+    /* Timeline */
+    .timeline {
+      position: relative;
+      margin-left: 15px;
+      padding-left: 20px;
+      border-left: 3px solid #4a90e2;
     }
-    ul {
-      margin: 5px 0 10px 20px;
+
+    .timeline::before {
+      content: "";
+      position: absolute;
+      left: -7px;
+      top: 0;
+      width: 14px;
+      height: 14px;
+      background-color: #4a90e2;
+      border-radius: 50%;
     }
-    .skills-container {
-      display: flex;
-      flex-wrap: wrap;
+
+    .timeline-entry {
+      margin-bottom: 30px;
+      position: relative;
+    }
+
+    .timeline-entry::before {
+      content: "";
+      position: absolute;
+      left: -11px;
+      top: 5px;
+      width: 10px;
+      height: 10px;
+      background-color: #4a90e2;
+      border-radius: 50%;
+      z-index: 1;
+    }
+
+    .timeline-entry h4 {
+      margin: 0;
+      font-weight: bold;
+      color: #1e2a38;
+    }
+
+    .timeline-entry small {
+      display: block;
+      color: #555;
+      margin-bottom: 5px;
+    }
+
+    .timeline-entry ul {
+      margin-left: 18px;
+      margin-top: 10px;
+    }
+
+    /* Skills */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
     }
-    .skill-box {
-      flex: 1 1 40%;
-      background: #fff;
-      border: 1px solid #ccc;
-      border-radius: 10px;
-      padding: 15px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+
+    .skill-category {
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
     }
-    .skill-box ul {
-      margin-left: 20px;
+
+    .skill-category h4 {
+      margin-top: 0;
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+      color: #4a90e2;
     }
-    @media (max-width: 600px) {
-      .skills-container {
-        flex-direction: column;
-      }
+
+    .chip {
+      display: inline-block;
+      background-color: #e8f1fc;
+      color: #4a90e2;
+      border-radius: 50px;
+      padding: 6px 14px;
+      margin: 6px 6px 0 0;
+      font-size: 0.9rem;
+      transition: background-color 0.2s;
+    }
+
+    .chip:hover {
+      background-color: #d0e6fa;
     }
   </style>
 </head>
 <body>
   <div class="header">
     <h1>Muhammad Firdaus Rosli</h1>
-    <h2>Frontend Dev | Software Tester | System Developer</h2>
+    <h2>Frontend Developer | Software Tester | System Developer</h2>
     <div class="contact">
-      <span>📧 mfirdausrosli13@gmail.com</span>
-      <span>📍 Kelantan, Malaysia</span>
-      <span>🔗 <a href="https://linkedin.com/in/firdausrosli77">LinkedIn</a></span>
+      <div>📍 Lot 501, Taman Rahmah, Padang Kala, 16400 Melor, Kelantan</div>
+      <div>📞 019-9422124</div>
+      <div>📧 mfirdausrosli13@gmail.com</div>
+      <div>🔗 <a href="https://linkedin.com/in/firdausrosli77" target="_blank">LinkedIn Profile</a></div>
     </div>
   </div>
+
   <div class="container">
     <div class="section">
       <h3>Profile Summary</h3>
-      <p>Computer Science student actively seeking full-time roles in software quality assurance, system development, or frontend engineering. Strong foundation in backend frameworks and frontend technologies. Proven experience working with MySQL, Java Spring Boot, PHP, HTML, CSS, and test automation. Eager to grow within collaborative, fast-paced environments and contribute meaningfully to real-world projects.</p>
+      <p>Computer Science graduate actively seeking full-time opportunities in software engineering, quality assurance, or frontend development. Experienced in Java Spring Boot, PHP, HTML/CSS, and MySQL. Skilled in test automation with Robot Framework, GitLab version control, and project management. Passionate about building impactful software solutions in collaborative environments.</p>
     </div>
 
     <div class="section">
       <h3>Work Experience</h3>
-      <div class="entry">
-        <h4>Pen. Peg. Teknologi Maklumat (FA5) – MDA</h4>
-        <p><em>Feb 2025 – Present</em></p>
-        <ul>
-          <li>Developed MedCast 3.0 using Java Spring Boot 3 and MySQL</li>
-          <li>Re-architected legacy PHP Laravel system into modular backend solution</li>
-        </ul>
-      </div>
-      <div class="entry">
-        <h4>Software Tester Intern – TM R&D</h4>
-        <p><em>Sept 2024 – Jan 2025</em></p>
-        <ul>
-          <li>Executed Robot Framework test cases on TMForce Portal</li>
-          <li>Resolved UI issues and ensured PII masking across modules</li>
-          <li>Utilized GitLab, Sourcetree for version control</li>
-        </ul>
-      </div>
-      <div class="entry">
-        <h4>System Developer Intern – Air Kelantan Sdn. Bhd.</h4>
-        <p><em>Mar 2022 – Sept 2022</em></p>
-        <ul>
-          <li>Developed custom complaint management system (PHP, MySQL)</li>
-          <li>Replaced Laravel stack with lightweight backend/frontend solution</li>
-        </ul>
+      <div class="timeline">
+        <div class="timeline-entry">
+          <h4>Pen. Peg. Teknologi Maklumat (FA5) – Medical Device Authority (MDA)</h4>
+          <small>Feb 2025 – Present</small>
+          <ul>
+            <li>Developed MedCast 3.0 using Java Spring Boot 3 and MySQL (phpMyAdmin).</li>
+            <li>Re-architected MedCast 2.0 (PHP Laravel) into a more scalable and modular backend solution.</li>
+            <li>Managed source code collaboratively with GitLab.</li>
+          </ul>
+        </div>
+        <div class="timeline-entry">
+          <h4>Software Tester Intern – TM R&D</h4>
+          <small>Sept 2024 – Jan 2025</small>
+          <ul>
+            <li>Developed and executed Robot Framework test cases for TMForce portal.</li>
+            <li>Resolved UI automation issues including calendar elements and visibility.</li>
+            <li>Implemented PII masking for data compliance.</li>
+            <li>Maintained User Stories for WFMS-DB Apps modernization.</li>
+          </ul>
+        </div>
+        <div class="timeline-entry">
+          <h4>System Developer Intern – Air Kelantan Sdn. Bhd.</h4>
+          <small>Mar 2022 – Sept 2022</small>
+          <ul>
+            <li>Built a complaint management system using PHP, HTML/CSS, and MySQL.</li>
+            <li>Replaced Laravel stack with a lightweight custom backend/frontend.</li>
+          </ul>
+        </div>
       </div>
     </div>
 
     <div class="section">
       <h3>Education</h3>
-      <div class="entry">
-        <h4>UiTM Kuala Terengganu – Bachelor of Computer Science (Hons)</h4>
-        <p><em>Oct 2022 – Feb 2025 | CGPA: 3.32</em></p>
-      </div>
-      <div class="entry">
-        <h4>UiTM Kuala Terengganu – Diploma in Computer Science</h4>
-        <p><em>Jan 2020 – Sept 2022 | CGPA: 3.53</em></p>
+      <div class="timeline">
+        <div class="timeline-entry">
+          <h4>Bachelor of Computer Science (Hons) – UiTM Kuala Terengganu</h4>
+          <small>Oct 2022 – Feb 2025 | CGPA: 3.32</small>
+        </div>
+        <div class="timeline-entry">
+          <h4>Diploma in Computer Science – UiTM Kuala Terengganu</h4>
+          <small>Jan 2020 – Sept 2022 | CGPA: 3.53</small>
+        </div>
       </div>
     </div>
 
     <div class="section">
-      <h3>Projects</h3>
-      <ul>
-        <li><strong>Tourist Attraction Recommender (FYP)</strong> – Python, Bootstrap, HeidiSQL</li>
-        <li><strong>Portal ePendidikan Kelantan</strong> – PHP, MySQL, Bootstrap</li>
-        <li><strong>College Registration System</strong> – Java, MySQL, Bootstrap</li>
-        <li><strong>Portal eTahfiz Melaka</strong> – PHP, MySQL, Bootstrap</li>
-      </ul>
+      <h3>Project Experience</h3>
+      <div class="timeline">
+        <div class="timeline-entry">
+          <h4>Terengganu Tourist Attraction Recommender (FYP)</h4>
+          <small>Oct 2023 – July 2024</small>
+          <ul>
+            <li>Developed a content-based filtering algorithm to suggest personalized tourist destinations.</li>
+            <li>Python, HeidiSQL, Bootstrap</li>
+          </ul>
+        </div>
+        <div class="timeline-entry">
+          <h4>Portal ePendidikan Kelantan</h4>
+          <small>Mar 2023 – July 2023</small>
+          <ul>
+            <li>Developed a comprehensive education portal integrating Kelantan state-level data.</li>
+            <li>PHP, MySQL, Bootstrap</li>
+          </ul>
+        </div>
+        <div class="timeline-entry">
+          <h4>College Registration System</h4>
+          <small>Mar 2023 – July 2023</small>
+          <ul>
+            <li>Led frontend development; built user-friendly registration workflows and responsive UI.</li>
+            <li>Java, MySQL, Bootstrap</li>
+          </ul>
+        </div>
+        <div class="timeline-entry">
+          <h4>Portal eTahfiz Melaka</h4>
+          <small>Apr 2024 – July 2024</small>
+          <ul>
+            <li>Developed a comprehensive portal for Majlis Agama Islam Melaka.</li>
+            <li>PHP, MySQL, HTML, CSS, Bootstrap</li>
+          </ul>
+        </div>
+      </div>
     </div>
 
     <div class="section">
       <h3>Skills</h3>
-      <div class="skills-container">
-        <div class="skill-box">
-          <h4>Technical Skills</h4>
-          <ul>
-            <li>Java, PHP, Python, HTML, CSS, C++</li>
-            <li>MySQL, HeidiSQL, DBeaver</li>
-            <li>Spring Boot 3, Bootstrap, Robot Framework</li>
-            <li>VS Code, GitLab, Sourcetree, MATLAB</li>
-          </ul>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h4>Languages & Frameworks</h4>
+          <span class="chip">Java</span>
+          <span class="chip">PHP</span>
+          <span class="chip">Python</span>
+          <span class="chip">HTML</span>
+          <span class="chip">CSS</span>
+          <span class="chip">C++</span>
+          <span class="chip">Spring Boot 3</span>
+          <span class="chip">Bootstrap</span>
         </div>
-        <div class="skill-box">
+        <div class="skill-category">
+          <h4>Databases & Tools</h4>
+          <span class="chip">MySQL</span>
+          <span class="chip">HeidiSQL</span>
+          <span class="chip">DBeaver</span>
+          <span class="chip">phpMyAdmin</span>
+        </div>
+        <div class="skill-category">
+          <h4>Testing & Automation</h4>
+          <span class="chip">Robot Framework</span>
+          <span class="chip">Selenium WebDriver</span>
+          <span class="chip">Test Case Design</span>
+          <span class="chip">PII Masking</span>
+        </div>
+        <div class="skill-category">
+          <h4>Tools & Platforms</h4>
+          <span class="chip">GitLab</span>
+          <span class="chip">Sourcetree</span>
+          <span class="chip">VS Code</span>
+          <span class="chip">Eclipse</span>
+          <span class="chip">Jira</span>
+          <span class="chip">Figma</span>
+          <span class="chip">NetBeans</span>
+        </div>
+        <div class="skill-category">
           <h4>Soft Skills</h4>
-          <ul>
-            <li>Team Collaboration</li>
-            <li>Analytical Thinking</li>
-            <li>Technical Documentation</li>
-            <li>Time Management</li>
-          </ul>
+          <span class="chip">Analytical Thinking</span>
+          <span class="chip">Time Management</span>
+          <span class="chip">Team Collaboration</span>
+          <span class="chip">Technical Documentation</span>
+        </div>
+        <div class="skill-category">
+          <h4>Languages</h4>
+          <span class="chip">Malay – Native</span>
+          <span class="chip">English – Good</span>
         </div>
       </div>
     </div>
 
     <div class="section">
       <h3>References</h3>
-      <p><strong>Siti Mufizah Nur Binti Yusman</strong> – TM R&D Cyberjaya<br>📞 013-6069952 | 📧 mufizah@tmrnd.com.my</p>
+      <p><strong>Siti Mufizah Nur Binti Yusman</strong> – TM R&D, Cyberjaya<br>📞 013-6069952 | 📧 mufizah@tmrnd.com.my</p>
       <p><strong>Gloria Jennis Tan</strong> – UiTM KT<br>📞 012-8582143 | 📧 gloria@uitm.edu.my</p>
     </div>
   </div>
